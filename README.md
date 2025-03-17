@@ -49,8 +49,10 @@ Este proyecto es una página web responsiva desarrollada con **ASP.NET Core 8.0.
 
 ### Vistas
 - **Index.cshtml**: Página principal con el diseño responsivo y el botón flotante para el formulario de contacto.
-- **Privacy.cshtml**: Página de privacidad (opcional).
-- **Error.cshtml**: Página de error personalizada.
+- **_ContactForm.cshtml**: Diseño del formulario de contacto.
+- **_Layout.cshtml**: Navbar, ventanas modal.
+- **MenuVista.cshtml**: subvista para la seccion de menus.
+- **NosotrosVista.cshtml**: subvista para la seccion de nosotros.
 
 ### Base de Datos
 - **ApplicationDbContext**: Contexto de la base de datos que incluye el `DbSet` para los formularios de contacto.

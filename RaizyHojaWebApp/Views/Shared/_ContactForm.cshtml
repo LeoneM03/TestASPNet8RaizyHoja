@@ -1,0 +1,25 @@
+﻿@model RaizyHojaWebApp.Models.ContactFormIndex
+
+<form asp-controller="Contact" asp-action="SubmitContactForm" method="post" id="contactForm">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Nombre</label>
+        <input asp-for="Name" class="form-control" required>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Correo Electrónico</label>
+        <input asp-for="Email" class="form-control" required>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Message" class="form-label">Mensaje</label>
+        <textarea asp-for="Message" class="form-control" rows="4" required></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+</form>

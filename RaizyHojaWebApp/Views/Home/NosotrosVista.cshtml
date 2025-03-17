@@ -1,0 +1,83 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="row">
+    <!-- Título de la sección -->
+    <div class="col-12 text-center mb-5">
+        <h2 class="display-4">Sobre Nosotros</h2>
+        <p class="lead">Conoce más sobre nuestra misión, visión y valores.</p>
+    </div>
+
+    <!-- Contenedor para la imagen y el contenido de Misión y Visión -->
+    <div class="col-12 d-flex flex-wrap justify-content-between">
+        <!-- Imagen a la izquierda -->
+        <div class="col-md-4 mb-4">
+            <img src="@Url.Content("~/images/Herovegan.jpg")" alt="Plato_de_lentejas" class="img-fluid ">
+        </div>
+
+        <!-- Misión y Visión a la derecha -->
+        <div class="col-md-7">
+            <div class="mb-4">
+                <h3 class="text-left">Misión</h3>
+                <p>
+                    Nuestra misión es proporcionar soluciones innovadoras que mejoren la vida de las personas mediante el uso de la tecnología y el diseño. Trabajamos con pasión y compromiso para satisfacer las necesidades de nuestros clientes.
+                </p>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="text-left">Visión</h3>
+                <p>
+                    Ser una empresa líder en el sector, reconocida por su capacidad de adaptación y excelencia en la creación de soluciones innovadoras para nuestros clientes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Espacio entre Misión/Visión y Nuestro Equipo -->
+    <div class="col-12 mb-5"></div>
+
+    <!-- Slider de Imágenes del Restaurante -->
+    <div class="col-12 text-center">
+        <h3>Conoce Nuestro Restaurante</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="@Url.Content("~/images/equipo.png")" class="d-block w-100" alt="equipo_de_cocina">
+                </div>
+                <div class="carousel-item">
+                    <img src="@Url.Content("~/images/bolddeverduras.png")" class="d-block w-100" alt="Bold_de_verduras">
+                </div>
+                <div class="carousel-item">
+                    <img src="@Url.Content("~/images/arrozvegetales.png")" class="d-block w-100" alt="arroz_vegetales">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Valores -->
+    <div class="col-12" style="padding-top: 1rem;">
+        <h3>Valores</h3>
+        <ul>
+            <li><strong>Compromiso:</strong> Nos comprometemos con nuestros clientes para ofrecerles soluciones eficaces.</li>
+            <li><strong>Innovación:</strong> Siempre estamos buscando formas de mejorar y adaptarnos a las nuevas tecnologías.</li>
+            <li><strong>Pasión:</strong> Amamos lo que hacemos y trabajamos con pasión en cada proyecto.</li>
+            <li><strong>Transparencia:</strong> Fomentamos una comunicación abierta y honesta con nuestros clientes y dentro de nuestro equipo.</li>
+        </ul>
+    </div>
+</div>

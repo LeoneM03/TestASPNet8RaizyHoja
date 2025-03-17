@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Raíz y Hoja - Home";
+}
+
+<!-- Modal de formulario de contacto -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-bottom-right">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Formulario de Contacto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent">
+                    <partial name="_ContactForm" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Seccion de nosotros -->
+<section id="nosotros" class="container my-5">
+    <partial name="NosotrosVista" />
+</section>
+
+
+<!--Seccion de nosotros -->
+<section id="menu" class="container my-5">
+    <partial name="MenuVista" />
+</section>
+

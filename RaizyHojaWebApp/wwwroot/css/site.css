@@ -1,0 +1,200 @@
+/* General */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DEE1DB;
+    color: #293306;
+}
+
+
+/* Header */
+.bg-primary {
+    background-color: #797F5C !important;
+}
+
+/* Espaciado dentro del contenedor del navbar */
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+
+/* stilos del navbar*/
+.navbar {
+    padding: 1.5rem 0;
+    background-color: #797F5C;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    color: #D3D8BE;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #293306 !important;
+    }
+
+.navbar-brand i {
+    font-size: 2rem;
+}
+
+.navbar-brand span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #D3D8BE;
+}
+
+/* Sección activa del menú */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ff8c00 !important;
+    font-weight: 700;
+}
+
+/* esto es para el scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Sección de introducción (en el Home) */
+.intro-section {
+    background: url('/images/Bannerprincipal.jpg') no-repeat center center fixed, /* Imagen de fondo */
+    linear-gradient(to top, rgba(222, 225, 219, 1), rgba(222, 225, 219, 0)); /* Degradado */
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    text-align: right;
+    color: #DEE1DB;
+    position: relative;
+    z-index: 0;
+}
+
+    /* Panel negro con opacidad sobre la imagen para que se vea el texto */
+    .intro-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+
+/* Contenedor de los textos */
+.intro-section-texts {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+    text-align: right;
+    z-index: 2;
+}
+
+/* Estilo para el título */
+.intro-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo para el párrafo */
+.intro-section p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* BTN MODAL FORMULARIO */
+
+#contactButton {
+    z-index: 1050; /* Se mantiene encima de otros elementos */
+    background-color: #293306; /* Color verde de Bootstrap */
+    color: white; /* Color del texto */
+    transition: all 0.3s ease-in-out;
+    border-color: #DEE1DB;
+}
+
+    #contactButton:hover {
+        background-color: #797F5C;
+    }
+
+/* esto posiciona el modal a la esquinit derecha */
+.modal-dialog-bottom-right {
+    position: fixed;
+    margin: 0;
+    max-width: 400px;
+    bottom: 190px;
+    right: 20px;
+}
+
+
+.modal.fade .modal-dialog-bottom-right {
+    transform: translate(0, 50px);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog-bottom-right {
+    transform: none;
+}
+
+
+
+/* media querys */
+/*del modal*/
+@media (max-width: 767px) {
+    #contactButton {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        #contactButton i {
+            margin: 0;
+        }
+
+        #contactButton span {
+            display: none;
+        }
+}
+
+/*del general */
+@media (max-width: 991px) {
+    .intro-section {
+        height: 70vh;
+        padding: 3rem 0;
+        background-position: top center;
+        background-attachment: scroll;
+    }
+
+    .intro-section-texts {
+        padding: 2rem 1rem 0 1rem;
+        text-align: center;
+    }
+
+    .intro-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-section p {
+        font-size: 1.1rem;
+    }
+}
+

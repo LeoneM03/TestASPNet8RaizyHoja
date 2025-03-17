@@ -17,8 +17,8 @@ Este proyecto es una página web responsiva desarrollada con **ASP.NET Core 8.0.
 - **Font Awesome** para íconos.
 
 ### Dependencias
--Microsoft.EntityFrameworkCore.SqlServer (8.0.14)
--Microsoft.EntityFrameworkCore.Tools (8.0.14)
+- **Microsoft.EntityFrameworkCore.SqlServer (8.0.14)
+- **Microsoft.EntityFrameworkCore.Tools (8.0.14)
 
 ## Funcionalidades
 

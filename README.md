@@ -5,8 +5,8 @@ Este proyecto es una página web responsiva desarrollada con **ASP.NET Core 8.0.
 ## Requisitos
 
 ### Entorno de Desarrollo
-- **Visual Studio 2022** o superior.
-- **.NET Core SDK 8.0.14** o superior.
+- **Visual Studio 2022**.
+- **.NET Core SDK 8.0.14**.
 - **SQL Server** (LocalDB o SQL Server Express).
 
 ### Tecnologías Utilizadas
